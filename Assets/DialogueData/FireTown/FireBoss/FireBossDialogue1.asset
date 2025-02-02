@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
+  m_Name: FireBossDialogue1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'Dante: Mwahaha! It is I, the greatest fire spirit of all: Dante!'
+  - 'Dante: Are you the heroes that shall face me in battle? Very well! I look forward
+    to it.'
+  - "Lumi: Are you sure we\u2019re ready for this?"
+  - 'Knight: Of course! Marching forward is the quickest path to victory!'
+  - "Dante: Don\u2019t forget the rewards if you let me live."
+  - 'Mage: We would never! We defeated Anemetta, and now you, too, shall fall.'
+  - 'Knight: Well said!'
+  responses:
+  - responseText: Bring it on!
+    dialogueObject: {fileID: 0}

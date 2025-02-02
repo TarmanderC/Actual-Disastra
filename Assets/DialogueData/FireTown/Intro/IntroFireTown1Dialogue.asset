@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
+  m_Name: IntroFireTown1Dialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Villager: Yes, it\u2019s the Knight and Mage that saved Gusty Village! Thank
+    you for coming to save us!"
+  - 'Knight: Any time! What seems to be the problem?'
+  - 'Villager: Some fire spirit is threatening to burn our homes down unless a hero
+    can defeat him.'
+  - 'Villager: I was thankful she had that much mercy on us, but now we shall be
+    safe for good!'
+  - "Mage: I\u2019m glad we are receiving such a warm welcome. It must be because
+    we\u2019ve been kind so far."
+  - 'Knight: Let us keep it that way! Now, let us find this fire spirit and quench
+    his flames!'
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 0}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
+  m_Name: WolfBattleDialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Wolf: Ah, so these must be the two heroes I smelled! You\u2019ll be sorry you
+    ever entered this forest once I lay my paws on you!"
+  - 'Knight: You gloat, you foul beast, but you could never be prepared for our power!'
+  - 'Mage: Yeah!
+
+'
+  responses:
+  - responseText: Bring it on!
+    dialogueObject: {fileID: 11400000, guid: 5e2a73955c269430a805b33ad9e579ff, type: 2}

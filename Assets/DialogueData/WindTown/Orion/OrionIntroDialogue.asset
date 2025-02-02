@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
+  m_Name: OrionIntroDialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Child: Look, it\u2019s the Knight and the Mage!"
+  - "Child: I\u2019ve been wanting to meet you two forever! My mama has told me a
+    bunch of stories about that time you-"
+  - "Knight: Please, don\u2019t remind us of what\u2019s already happened."
+  - 'Mage: What do you want, little boy?'
+  - "Orion: My name\u2019s Orion, and I want to help you defeat that giant tornado
+    over there?"
+  - 'Mage: And what makes you think you can help us?'
+  - "Orion: I\u2019ve been training to fight wind enemies. I can\u2019t go far from
+    home, but I could help you while you\u2019re still in the village!"
+  - "Knight: I don\u2019t see why not. Welcome aboard!"
+  responses:
+  - responseText: Welcome
+    dialogueObject: {fileID: 11400000, guid: a69b4e2a6ca5e44e8a56889e0ae4a0eb, type: 2}

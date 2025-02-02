@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
+  m_Name: SparedWindDialogue1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Dante: So I am defeated by the heroes! That means\u2026it\u2019s decision time."
+  - "Dante: Do you put the villagers\u2019 lives over my own? Or do you spare me
+    to reap Disastra\u2019s rewards once more!"
+  - "Mage: Unfortunately, that\u2019s a good question."
+  - 'Knight: Give me one second to think. I shall make my choice wisely.'
+  - "Lumi: That doesn\u2019t make me feel much better\u2026"
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 0}

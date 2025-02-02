@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
+  m_Name: KillWindBossDialogue1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'Knight: Unfortunately, Anemetta, I will not be accepting your offer. I must
+    be killing you now.'
+  - "Orion: Alright! I can\u2019t wait to see this!"
+  - 'Mage: This definitely feels like the right decision.'
+  - 'Anemetta: No! You must reconsider! Noooooo-'
+  responses:
+  - responseText: Kill Anemetta
+    dialogueObject: {fileID: 11400000, guid: 97efe95ec066641e7a3350d852e46572, type: 2}

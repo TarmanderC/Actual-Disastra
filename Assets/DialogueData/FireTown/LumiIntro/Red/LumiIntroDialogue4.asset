@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
+  m_Name: LumiIntroDialogue4
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "Woman: Have you met my daughter, Lumi? She\u2019s well trained in dealing with
+    fire."
+  - "Lumi: Mom\u2026aren\u2019t these those dangerous people that wrecked the other
+    village?"
+  - "Woman: Now, now, my daughter. It\u2019s your duty to help them stop the fires
+    so that we are not destroyed as well."
+  - 'Lumi: Who told you that?'
+  - 'Knight: Does that count as me telling her that?'
+  - "Mage: Lumi, you don\u2019t have to come with us if you don\u2019t want to."
+  - "Mage: But we promise you\u2019ll come back safe\u2026and a lot more famous."
+  - "Lumi: Well, I guess I can\u2019t refuse an offer like that."
+  responses:
+  - responseText: Welcome!
+    dialogueObject: {fileID: 11400000, guid: c3f38736e9efe48ec8bb6454c970e2e8, type: 2}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
+  m_Name: 2ndWolfDialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'Wolf: That last encounter with those heroes really whetted my appetite! The
+    battle was exhausting, though. I hope I do not meet them again soon.'
+  - 'Knight: Aren''t you that Wolf from earlier?'
+  - 'Knight: This has been quite an empty region so far. I wonder what made it this
+    way?'
+  - "Wolf: Oh\u2026about that."
+  - 'Knight: Do you know something about this, wolf? Please talk, or I will be forced
+    to fight you.'
+  - "Wolf: I don\u2019t know what you are talking about."
+  - 'Knight: In that case, get ready for a fight!'
+  - "Mage: I\u2019m really confused right now\u2026"
+  responses:
+  - responseText: Bring it on!
+    dialogueObject: {fileID: 0}

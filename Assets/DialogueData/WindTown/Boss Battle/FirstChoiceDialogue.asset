@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
+  m_Name: FirstChoiceDialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'Anemetta: So I have lost! Now, you must make your choice.'
+  - 'Anemetta: Do you end my life to save that insignificant village? Or do you let
+    me live for rewards beyond your wildest dreams?'
+  - "Mage: We shall defeat you once and for all, you witch!\n\n \u2026Right?"
+  - 'Knight: Rewards beyond our wildest dreams, you say? I must consider such a powerful
+    offer.'
+  - 'Mage: Maybe that would be for the best? I cannot say.'
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 0}

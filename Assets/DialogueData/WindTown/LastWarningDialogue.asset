@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
+  m_Name: LastWarningDialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'NPC: Do be careful! That hurricane spirit could destroy us all!'
+  - "Knight: Not to worry, citizen. We\u2019ll have it defeated in no time!"
+  - 'Mage: (jokingly) Unless we were to spare it to get whatever that guy offered
+    us in our dream.'
+  - "Knight: (laughing) Now, why would we do that? Let\u2019s get on with the quest."
+  - 'Knight: Orion, you lead the way.'
+  - 'Orion: Yes, sir?'
+  - 'Mage: Is it really okay to put the child in front?'
+  - "Knight: Of course! He\u2019s the best at dealing with the wind, after all."
+  - 'Knight: We really should be going!'
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 0}
