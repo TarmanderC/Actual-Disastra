@@ -18,4 +18,4 @@ MonoBehaviour:
   - 'Knight: Right you are! Let us return now to spread the good news.'
   responses:
   - responseText: Huh?
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: 927609f28fd2e449c948d960daeb9b18, type: 2}

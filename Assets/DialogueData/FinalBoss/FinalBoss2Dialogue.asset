@@ -12,5 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
   m_Name: FinalBoss2Dialogue
   m_EditorClassIdentifier: 
-  dialogue: []
-  responses: []
+  dialogue:
+  - 'Disastra: When you awake, it shall be time to face me in combat.'
+  - "Disastra: Prepare yourself, for the fight shall not be easy\u2026"
+  - 'Knight: Egads! The evil hag from our dreams!'
+  - 'Disastra: I have a name, you know.'
+  - "Mage: Even I know that. That doesn\u2019t mean we will spare you, though\u2026Disastra."
+  - 'Knight: I believe it is time for the battle! Are you ready to fight, Disastra?'
+  - 'Disastra: I wonder the same of you, for it is not I who is in danger.'
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 0}

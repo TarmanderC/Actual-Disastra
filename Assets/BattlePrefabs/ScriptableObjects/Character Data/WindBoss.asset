@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Anemetta
   maxHealth: 6000
-  currentHealth: 1
+  currentHealth: 6000
   baseAttack: 100
   characterImage: {fileID: 0}

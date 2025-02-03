@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b24c2f33c98040ed91031eef6a6663b, type: 3}
   m_Name: DISASTRA
   m_EditorClassIdentifier: 
-  characterName: 
-  maxHealth: 0
-  currentHealth: 0
-  baseAttack: 0
+  characterName: Disastra
+  maxHealth: 10000
+  currentHealth: 10000
+  baseAttack: 300
   characterImage: {fileID: 0}

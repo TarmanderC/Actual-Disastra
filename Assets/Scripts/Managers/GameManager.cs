@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -27,6 +28,16 @@ public class GameManager : MonoBehaviour
         FireTownSavedNeutralEnding
     }
 
+    public GameObject goodEnding;
+    public GameObject badEnding;
+    public GameObject windTownSavedNeutralEnding;
+    public GameObject fireTownSavedNeutralEnding;
+
+    public GameObject Orion;
+    public GameObject Lumi;
+
+    public List<Enemy> finalBosses = new List<Enemy>();
+
     public BattleManager bm;
     public UIManager uiManager;
     public MenuController menuController;
@@ -53,6 +64,11 @@ public class GameManager : MonoBehaviour
         firstDecision = FirstDecision.None;
         secondDecision = SecondDecision.None;
         finalEndings = FinalEndings.None;
+
+        goodEnding.SetActive(false);
+        badEnding.SetActive(false);
+        windTownSavedNeutralEnding.SetActive(false);
+        fireTownSavedNeutralEnding.SetActive(false);
     }
     public void SetUpGM() {
         allPlayers = new List<Character>();
@@ -99,6 +115,7 @@ public class GameManager : MonoBehaviour
         UpdatePlayers();
     }
 
+
     public void SpareDecision() {
         if (currentStage == CurrentStage.firstChoice) {
             firstDecision = FirstDecision.SpareWindBoss;
@@ -135,5 +152,55 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log($"GameManager: Player EXP increased by {levels} levels");
+    }
+
+    public void setFinalParty() {
+        if (firstDecision == FirstDecision.SpareWindBoss && secondDecision == SecondDecision.SpareFireBoss) { // Spared all bosses
+            
+        } else if (firstDecision == FirstDecision.SpareWindBoss && secondDecision == SecondDecision.KillFireBoss) { // Spare only Wind Boss
+            AddPlayer(Lumi);
+        } else if (firstDecision == FirstDecision.KillWindBoss && secondDecision == SecondDecision.SpareFireBoss) { // Spare only Fire Boss
+            AddPlayer(Orion);
+        } else if (firstDecision == FirstDecision.KillWindBoss && secondDecision == SecondDecision.KillFireBoss) { // Killed all bosses
+            AddPlayer(Orion);
+            AddPlayer(Lumi);
+        }
+    }
+
+    public void setFinalBoss() { // 1. Boss++, 2. Wind Spared Boss+, 3. Fire Spared Boss+, 4. Boss
+        if (firstDecision == FirstDecision.SpareWindBoss && secondDecision == SecondDecision.SpareFireBoss) { // Spared all bosses
+            finalBosses[0].TriggerBattle();
+        } else if (firstDecision == FirstDecision.SpareWindBoss && secondDecision == SecondDecision.KillFireBoss) { // Spare only Wind Boss
+            finalBosses[1].TriggerBattle();
+        } else if (firstDecision == FirstDecision.KillWindBoss && secondDecision == SecondDecision.SpareFireBoss) { // Spare only Fire Boss
+            finalBosses[2].TriggerBattle();
+        } else if (firstDecision == FirstDecision.KillWindBoss && secondDecision == SecondDecision.KillFireBoss) { // Killed all bosses
+            finalBosses[3].TriggerBattle();
+        }
+    }
+
+    public void PlayTrueGoodEnding(KnightMovement knightMovement) {
+        Debug.Log("YESS");
+        goodEnding.SetActive(true);
+
+        knightMovement.PlayDialogue(goodEnding.GetComponent<DialogueActivator>());
+    }
+
+    public void PlayTrueBadEnding(KnightMovement knightMovement) {
+        Debug.Log("NOOOOOOOOOO");
+        badEnding.SetActive(true);
+        knightMovement.PlayDialogue(goodEnding.GetComponent<DialogueActivator>());
+    }
+
+    public void PlayWindTownSavedNeutralEnding(KnightMovement knightMovement) {
+        Debug.Log("Wind Town Saved Neutral Ending");
+        windTownSavedNeutralEnding.SetActive(true);
+        knightMovement.PlayDialogue(goodEnding.GetComponent<DialogueActivator>());
+    }
+
+    public void PlayFireTownSavedNeutralEnding(KnightMovement knightMovement) {
+        Debug.Log("Fire Town Saved Neutral Ending");
+        fireTownSavedNeutralEnding.SetActive(true);
+        knightMovement.PlayDialogue(goodEnding.GetComponent<DialogueActivator>());
     }
 }

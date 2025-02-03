@@ -16,4 +16,4 @@ MonoBehaviour:
   - 'Dante: Sorry, but I forgot to give you something!'
   responses:
   - responseText: Huh?
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000, guid: d6f2c47bad12948b286bfeba93706b29, type: 2}

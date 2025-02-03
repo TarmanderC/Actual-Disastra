@@ -32,6 +32,7 @@ public class DialogueUI : MonoBehaviour
             AddResponseEvents(responseEventComponent.Events);
         }
 
+        Debug.Log("Dialogue box opened");
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
 
@@ -77,5 +78,7 @@ public class DialogueUI : MonoBehaviour
         isOpen = false;
         dialogueBox.SetActive(false);
         textLabel.text = String.Empty;
+
+        Debug.Log("Dialogue box closed");
     }
 }

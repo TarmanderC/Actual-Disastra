@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc44236857a84953838b02764038d9a, type: 3}
   m_Name: FinallBoss1Dialogue
   m_EditorClassIdentifier: 
-  dialogue: []
-  responses: []
+  dialogue:
+  - 'Disastra: You have done well so far. You have more than proven your worth to
+    me.'
+  - 'Disastra: Here is your reward for allowing my wildfire to rage unopposed.'
+  responses:
+  - responseText: ...
+    dialogueObject: {fileID: 11400000, guid: 927609f28fd2e449c948d960daeb9b18, type: 2}

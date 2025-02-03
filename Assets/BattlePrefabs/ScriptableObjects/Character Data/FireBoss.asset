@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FireBoss
   m_EditorClassIdentifier: 
   characterName: Dante
-  maxHealth: 1
-  currentHealth: 1
+  maxHealth: 7000
+  currentHealth: 7000
   baseAttack: 100
   characterImage: {fileID: 0}

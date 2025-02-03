@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 9f723f7f872584dcebf5c53ba831f4fb, type: 2}
-  currentHealth: 10000000
-  maxHealth: 10000000
+  currentHealth: 3
+  maxHealth: 3
   characterName: Disastra
   baseAttack: 1000
   attacks:
