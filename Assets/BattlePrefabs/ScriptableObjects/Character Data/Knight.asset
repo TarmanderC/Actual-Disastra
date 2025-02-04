@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Knight
   maxHealth: 3000
-  currentHealth: 1860
-  baseAttack: 91
+  currentHealth: 3000
+  baseAttack: 70
   characterImage: {fileID: 21300000, guid: 60896ef54ed904ca0bb222bb65a852ca, type: 3}

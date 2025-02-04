@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Mage
   maxHealth: 2000
-  currentHealth: 1
-  baseAttack: 78
+  currentHealth: 2000
+  baseAttack: 60
   characterImage: {fileID: 21300000, guid: 090b5b77ed9b2451f852772b78ce59ed, type: 3}

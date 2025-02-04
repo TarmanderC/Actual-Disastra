@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "Attack", menuName = "Combat/Attack")]
 public class Attack : ScriptableObject

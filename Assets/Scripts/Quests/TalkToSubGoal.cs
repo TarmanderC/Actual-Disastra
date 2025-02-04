@@ -5,15 +5,18 @@ using UnityEngine;
 public class TalkToSubGoal : QuestSubGoal
 {
     public override void UpdateStatus(Inventory inventory) {
-        currentCount = 1;
-
         IsCompleted();
+    }
+
+    public void complete() {
+        currentCount = 1;
     }
 
     public override bool IsCompleted() {
         if (currentCount >= requiredCount) {
             completed = true;
         }
+        Debug.Log("IsCompleted: " + completed);
         return currentCount > requiredCount;
     }
 

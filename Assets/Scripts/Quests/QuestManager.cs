@@ -16,6 +16,6 @@ public class QuestManager : MonoBehaviour
     }
 
     public void FinishTalkQuest(TalkToSubGoal subGoal) {
-        subGoal.UpdateStatus(playerInventory.inventory);
+        subGoal.complete();
     }
 }

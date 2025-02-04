@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Orion
   maxHealth: 1500
-  currentHealth: 360
-  baseAttack: 104
+  currentHealth: 1500
+  baseAttack: 80
   characterImage: {fileID: -8272662868905115730, guid: 2b53a85a5211a45129b28c4315e8dda1, type: 3}
